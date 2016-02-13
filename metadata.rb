@@ -5,7 +5,7 @@ license          "Apache 2.0"
 description      "BackupPC Server and Client"
 long_description IO.read(File.join(File.dirname(__FILE__), "README.md"))
 
-version          "0.9.16"
+version          "1.0.0"
 
 depends          "apache2"
 depends          "htpasswd"
