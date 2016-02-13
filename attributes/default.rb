@@ -1,0 +1,1 @@
+default['backuppc']['user'] = 'backuppc'

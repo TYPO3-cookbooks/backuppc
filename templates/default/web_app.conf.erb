@@ -1,0 +1,7 @@
+<VirtualHost *:80>
+  ServerName <%= @params[:server_name] %>
+  DocumentRoot <%= @params[:docroot] %>
+
+  Include /etc/backuppc/apache.conf
+  
+</VirtualHost>

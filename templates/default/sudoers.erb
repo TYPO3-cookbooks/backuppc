@@ -1,0 +1,8 @@
+# Allow t3o-backup to run rsync (used for backuppc)
+#
+# Note:
+# When restoring files, you need to edit this file and remove "--sender" from the command.
+# Let Chef overwrite it again when finished.
+# See http://forge.typo3.org/issues/49800 for more information.
+
+<%= node.backuppc.user %>        ALL = NOPASSWD: /usr/bin/rsync --server --sender *
