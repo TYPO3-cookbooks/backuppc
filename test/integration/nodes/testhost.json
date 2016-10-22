@@ -1,0 +1,12 @@
+{
+  "id":       "testhost",
+  "name":     "testhost.example.com",
+  "chef_type": "node",
+  "json_class": "Chef::Node",
+  "run_list": [],
+  "chef_environment": "production",
+  "automatic": {
+    "fqdn": "testhost.example.com",
+    "ip": "127.0.0.1"
+  }
+}
