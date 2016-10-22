@@ -38,7 +38,7 @@ template "/etc/backuppc/config.pl" do
 end
 
 hosts = search(:node, node['backuppc']['server']['hosts_search_query'],
-               :filter_result => { 'fqdn' => [ 'fqdn' ] })
+               :filter_result => { 'fqdn' => [ 'fqdn' ] }).delete_if{ |host| host['fqdn'].nil? }
 
 template "/etc/backuppc/hosts" do
   owner "backuppc"
