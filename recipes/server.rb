@@ -37,7 +37,8 @@ template "/etc/backuppc/config.pl" do
   notifies :reload, "service[backuppc]"
 end
 
-hosts = search(:node, node['backuppc']['server']['hosts_search_query'])
+hosts = search(:node, node['backuppc']['server']['hosts_search_query'],
+               :filter_result => { 'fqdn' => [ 'fqdn' ] })
 
 template "/etc/backuppc/hosts" do
   owner "backuppc"
