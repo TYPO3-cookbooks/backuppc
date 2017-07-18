@@ -9,7 +9,7 @@ version          "1.0.1"
 
 depends          "ssl_certificates"
 
-depends          "apache2"
+depends          "apache2", "~> 4.0"
 depends          "htpasswd"
 depends          "sudo"
 depends          "user"
